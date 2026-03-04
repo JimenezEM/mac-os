@@ -1,16 +1,34 @@
-# React + Vite
+# macOS Inspired Portfolio
+An interactive macOS-style portfolio built with React, Vite, Zustand, GSAP, and Tailwind CSS.
+The project recreates core macOS interface behaviors including a dynamic Dock, draggable application windows, and animated UI transitions.
+This project focuses on advanced front-end architecture, global state management, animation orchestration, and reusable component patterns.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo
+https://mac-os-azure.vercel.app
 
-Currently, two official plugins are available:
+## Key Features
+- Interactive macOS-style Dock with hover animations
+- Draggable application windows using GSAP Draggable
+- Higher-Order Component (HOC) architecture for reusable window behavior
+- Global state management with Zustand
+- Smooth, production-level animations powered by GSAP
+- Modular and scalable React component structure
+- Responsive layout
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+React, Vite, JavaScript, Zustand, GSAP, Tailwind CSS, Vercel
 
-## React Compiler
+## Project Context
+This project was developed as an advanced front-end build focused on replicating a real operating system UI experience within the browser.
+It demonstrates:
+- Complex state synchronization
+- Animation-heavy UI systems
+- Component abstraction patterns
+- Debugging and architectural problem-solving
+- Real-world deployment practices
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application is designed to function as both a portfolio and a technical showcase of interactive UI engineering.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Notes
+This project recreates macOS-inspired interface patterns for educational and portfolio purposes.
+All UI behaviors and animations were implemented using modern React architecture and best practices.
