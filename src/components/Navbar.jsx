@@ -31,7 +31,7 @@ const Navbar = () => {
                 ))}
             </ul>
 
-            <time>{dayjs().format('ddd MMM D h:mm A')}</time>
+            <time>{dayjs().format('ddd MMM DD HH:mm')}</time>
         </div>
       
     </nav>
