@@ -48,7 +48,6 @@ const Terminal = () => {
                 </p>
 
                 <p className='text-black'>
-                    <Flag size={15} fill="black" />
                     Render time: 6ms
                 </p>
             </div>

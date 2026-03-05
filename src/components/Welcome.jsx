@@ -76,7 +76,7 @@ const Welcome = () => {
   return <section id="welcome">
     <p ref={subtitleRef}>
         {renderText(
-            "Hi! This is Emily Jimenez's", 
+            "Hey! This is Emily's", 
             'text-3xl font-georama', 
             100
         )}
@@ -90,7 +90,7 @@ const Welcome = () => {
     </h1>
 
     <div className='small-screen'>
-        <p>This portfolio is design for desktop/tablet screen only.</p>
+        <p>This portfolio is designed for desktop/tablet screen only.</p>
 
     </div>
   </section>

@@ -2,6 +2,7 @@ import { WindowControls } from '#components';
 import WindowWrapper from '#hoc/WindowWrapper';
 import { Download } from 'lucide-react';
 import React from 'react'
+import { useState } from "react";
 
 import { pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
@@ -15,6 +16,13 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 const Resume = () => {
+
+  const [numPages, setNumPages] = useState(null);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+
   return (
     <>
       <div id='window-header'>
@@ -26,9 +34,24 @@ const Resume = () => {
         </a>
       </div>
 
-      <Document file="files/resume.pdf">
-        <Page pageNumber={1} renderTextLayer renderAnnotationLayer />
-      </Document>
+      <div className="overflow-y-auto h-[500px] p-4">
+        <Document
+          file="files/resume.pdf"
+          onLoadSuccess={onDocumentLoadSuccess}
+        >
+          {Array.from(
+            new Array(numPages),
+            (el, index) => (
+              <Page
+                key={`page_${index + 1}`}
+                pageNumber={index + 1}
+                renderTextLayer
+                renderAnnotationLayer
+              />
+            )
+          )}
+        </Document>
+      </div>
     </>
   )
 };

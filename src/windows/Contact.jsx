@@ -8,15 +8,15 @@ const Contact = () => {
     <>
       <div id='window-header'>
         <WindowControls target="contact"/>
-        <h3>Contact Me</h3>
+        <h2>Contact Me</h2>
       </div>
 
       <div className='p-5 space-y-5'>
-        <img src="/images/adrian.jpg" alt="adrian" className='w-20 rounded-full'/>
+        <img src="/images/JimenezEM.jpg" alt="adrian" className='w-20 rounded-full'/>
 
-        <h3>Let's Connect</h3>
-        <p>Got an idea? A bug to squash? Or just wanna talk tech? I'm in.</p>
-        <p>@gmail.com</p>
+        <h3>Let's connect</h3>
+        <p>I'm a computer science engineer based in the US/CR. <br /> I enjoy building clean and real-world web applications. I usually work on front-end projects using React and Vite, creatig portfolio websites and freelance projects.</p>
+        <p>emily.jimguz@gmail.com</p>
 
         <ul>
             {socials.map(({ id, bg, link, icon, text }) => (
